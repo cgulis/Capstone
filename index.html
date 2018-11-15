@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
 
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>SmartRoute</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container" id="form-container">
+
+    <h1 style="text-align:center;">Smart Route</h1>
+    <div id="output"></div>
+  </div>
+  <div style="text-align: center;" id="holder">
+    <p style="text-align:center;">Please upload a route as a KML file. </p>
+    <button id="uploadButton" class="btn btn-primary">Upload File</button>
+    <button id="routeButton" class="btn btn-primary">Select Route</button>
+    <p id="consumed-energy" style="text-align: center;">Estimated Energy Consumed Along Route:</p>
+  </div>
+  <canvas id="initChart"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</body>
+
+<script>
+  console.log(process)
+</script>
+<script>
+  require('./renderer.js')
+</script>
+
 </html>

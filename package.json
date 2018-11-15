@@ -1,12 +1,12 @@
 {
-  "name": "electron-quick-start",
+  "name": "SmartRoute",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "CS Capstone project, analyze energy consumption of EV given a route.",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "",
   "keywords": [
     "Electron",
     "quick",
@@ -14,9 +14,19 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "Cristian Gulisano",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^3.0.0"
+  },
+  "dependencies": {
+    "@google/maps": "^0.5.5",
+    "@mapbox/togeojson": "^0.16.0",
+    "@types/xmldom": "^0.1.29",
+    "chart.js": "^2.7.3",
+    "electron-reload": "^1.2.5",
+    "haversine": "^1.1.0",
+    "npm": "^6.4.1",
+    "xmldom": "^0.1.27"
   }
 }
